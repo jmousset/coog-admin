@@ -10,38 +10,38 @@ RUN apk add --no-cache \
         py3-lxml py3-psycopg2 py3-redis py3-ldap3 uwsgi-python3 vim git \
     && ln -s /usr/bin/python3 /usr/bin/python \
     && pip3 install \
-        "Genshi" \
-        "kombu==4.6.3" \
         "celery==4.3.0" \
-        "dateutils" \
+        "dateutils==0.6.6" \
         "fastjsonschema==2.13" \
-        "filelock" \
-        "intervaltree" \
-        "ipaddress" \
-        "ldap3" \
-        "mock" \
-        "msgpack-python" \
-        "num2words" \
-        "passlib" \
-        "phonenumbers" \
-        "polib" \
-        "pydot" \
-        "pyflakes" \
-        "pyjwt" \
-        "pyparsing" \
-        "PyPDF2" \
-        "python-magic" \
-        "python-sql" \
-        "python-stdnum" \
-        "raven" \
-        "redis>=3" \
-        "relatorio" \
-        "requests" \
-        "rq" \
-        "simpleeval" \
-        "unidecode" \
-        "werkzeug==0.14.1" \
-        "wrapt" \
+        "filelock==3.0.12" \
+        "Genshi==0.7.3" \
+        "intervaltree==3.0.2" \
+        "ipaddress==1.0.23" \
+        "kombu==4.6.3" \
+        "ldap3==2.6.1" \
+        "mock==3.0.5" \
+        "msgpack-python==0.5.6" \
+        "num2words==0.5.10" \
+        "passlib==1.7.1" \
+        "phonenumbers==8.10.21" \
+        "polib==1.1.0" \
+        "pydot==1.4.1" \
+        "pyflakes==2.1.1" \
+        "PyJWT==1.7.1" \
+        "pyparsing==2.4.2" \
+        "PyPDF2==1.26.0" \
+        "python-magic==0.4.15" \
+        "python-sql==1.0.0" \
+        "python-stdnum==1.12" \
+        "raven==6.10.0" \
+        "redis==3.3.11" \
+        "relatorio==0.8.0" \
+        "requests==2.22.0" \
+        "rq==1.1.0" \
+        "simpleeval==0.9.8" \
+        "Unidecode==1.1.1" \
+        "Werkzeug==0.14.1" \
+        "wrapt==1.11.2" \
     && rm -rf /root/.cache \
     && find / -name "__pycache__" -prune -exec rm -rf {} \;
 
